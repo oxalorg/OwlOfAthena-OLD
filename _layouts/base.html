@@ -24,12 +24,21 @@
 
 <body>
 <header>
-    <h1><a class="sakura-blossom no-border fancy-font" id="site-name" href="{{ site_baseurl }}/">{{ site_name }}</a></h1>
-    <nav id="site-items">
-        <a class="sakura-fade no-border" href="{{ site_baseurl }}/wisdom/">wisdom</a>
-        <a class="sakura-fade no-border" href="{{ site_baseurl }}/about/">about</a>
-        </div>
+    <h1><a hre="{{ site_baseurl }}/" class="sakura-blossom no-border fancy-font" id="site-name">{{ site_name }}</a></h1>
+    <nav>
+    <ul class="pull-right no-list">
+        <li><a class="sakura-fade no-border" href="{{ site_baseurl }}/wisdom/">wisdom</a></li>
+        <li><a class="sakura-fade no-border" href="{{ site_baseurl }}/about/">about</a></li>
+    </ul>
     </nav>
+</header>
+<!-- <header> -->
+<!--     <h1><a class="sakura-blossom no-border fancy-font" id="site-name" href="{{ site_baseurl }}/">{{ site_name }}</a></h1> -->
+<!--     <nav id="site-items"> -->
+<!--         <a class="sakura-fade no-border" href="{{ site_baseurl }}/wisdom/">wisdom</a> -->
+<!--         <a class="sakura-fade no-border" href="{{ site_baseurl }}/about/">about</a> -->
+<!--         </div> -->
+<!--     </nav> -->
 </header>
 <main>
 {%- block body -%}{{content}}{%- endblock -%}
