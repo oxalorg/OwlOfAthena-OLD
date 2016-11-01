@@ -1,7 +1,8 @@
 MD=$(shell find . -iname "*.md" -not -path '*_layouts*')
 HTML=$(MD:.md=.html)
+SITENAME=owlofathena.com
 
-.PHONY = clean backup deploy all
+.PHONY = clean backup deploy all 
 all:
 	../stab/stab/stab.py
 
@@ -15,7 +16,5 @@ backup:
 
 deploy:
 	../stab/stab/stab.py && \
-	rsync -avz --exclude '_*' --exclude '.git*' \
-		--exclude 'venv*' --exclude '*.md' \
-		`pwd`/ oxal:/var/www/oxal.org/stab/ && \
+	surge .
 	$(MAKE) clean

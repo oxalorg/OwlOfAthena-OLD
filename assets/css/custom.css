@@ -19,17 +19,20 @@ body { font-family: Merriweather, Helvetica, Arial, sans-serif; color: #333; }
     float: right;
 }
 
-header {
+#site-header {
     position: relative;
-    height: 3em;
-    border-bottom: 1px solid #333;
+    height: 40px;
 }
 
-header nav {
+#site-header nav {
     float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-header h1 {
+#site-header h1 {
+    font-size: 1.5em;
     font-family: fancyRoman;
     display: inline-block;
     margin: 0;
@@ -37,12 +40,14 @@ header h1 {
     bottom: -5px;
 }
 
-header nav ul {
+#site-header nav ul {
+    margin: 0px;
     display: inline-block;
     list-style-type: none;
 }
 
-header nav ul li {
+#site-header nav ul li {
+    margin: 0;
     display: inline-block;
 }
 
