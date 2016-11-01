@@ -1,7 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
+
 html {
     background-image: url('../img/background.png')
 }
 
+body { font-family: Merriweather, Helvetica, Arial, sans-serif; color: #333; }
+
+@font-face {
+    font-family: fancyRoman;
+    src: url('../fonts/Roman_SD.ttf');
+}
+
+.fancy-font {
+    font-family: fancyRoman;
+}
+
+.pull-right {
+    float: right;
+}
+
+#site-name {
+    font-size: 1em;
+}
+
+header {
+    position: relative;
+    height: 3em;
+}
+
+#site-items {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    bottom: -5px;
+}
+
+
+
+/*------------------------------*/
 .profile-icon-wrapper {
     margin-top: 1em;
     padding: 1em;
