@@ -6,6 +6,9 @@ SITENAME=owlofathena.com
 all:
 	../stab/stab/stab.py
 
+sakura:
+	wget "https://raw.githubusercontent.com/oxalorg/sakura/master/sakura-black.css" -O assets/css/sakura.css
+
 clean:
 	@-/bin/rm $(HTML) 2>/dev/null
 

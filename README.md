@@ -1,6 +1,6 @@
 # Owl of Athena
 
-Source repository for the website [owlofathena.com](owlofathena.com).
+Source repository for the website [owlofathena.com](http://sowlofathena.com).
 
 Built using the static website generator
 [Stab](https://github.com/oxalorg/stab).

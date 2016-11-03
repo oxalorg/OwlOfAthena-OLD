@@ -4,7 +4,7 @@ html {
     background-image: url('../img/background.png')
 }
 
-body { font-family: Merriweather, Helvetica, Arial, sans-serif; color: #333; }
+body { font-family: Merriweather, Helvetica, Arial, sans-serif; }
 
 @font-face {
     font-family: fancyRoman;
@@ -20,15 +20,7 @@ body { font-family: Merriweather, Helvetica, Arial, sans-serif; color: #333; }
 }
 
 #site-header {
-    position: relative;
-    height: 40px;
-}
-
-#site-header nav {
-    float: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    overflow: hidden;
 }
 
 #site-header h1 {
@@ -42,16 +34,32 @@ body { font-family: Merriweather, Helvetica, Arial, sans-serif; color: #333; }
 
 #site-header nav ul {
     margin: 0px;
-    display: inline-block;
+    padding: 0px;
     list-style-type: none;
 }
 
-#site-header nav ul li {
-    margin: 0;
-    display: inline-block;
+#site-header nav ul li:first-child {
+    float: left;
 }
 
+#site-header nav ul li {
+    display: inline-block;
+    float: right;
+}
 
+#site-footer {
+    margin-top: 25px;
+}
+
+#site-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#site-footer ul li {
+    display: inline-block;
+}
 
 /*------------------------------*/
 .profile-icon-wrapper {
